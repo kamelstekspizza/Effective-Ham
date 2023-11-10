@@ -1,4 +1,4 @@
-from __future__ import division
+#import general libraries
 import sys
 import numpy as np
 import scipy.integrate as si
@@ -6,12 +6,10 @@ import matplotlib.pyplot as plt
 import scipy.fft as sft
 from scipy.special import erf
 
-sys.path.append('/home/edvinolofsson/bin/')
+#Import local code
 from constants import *
-from plot_utils import format_plot
-
-sys.path.append('/home/edvinolofsson/Rabi_perturbation_theory/code')
 from effective_Hamiltonian import complex_Rabi
+from plot_utils import format_plot
 
 class two_level_system:
     #Solve two level system with envelope

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 #Useful constants in atomic physics
 
 length_au = 5.291772109*10**(-11)

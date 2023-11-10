@@ -1,11 +1,10 @@
+#Import general libraries
 import numpy as np #For working with arrays
 import matplotlib #Used for changing some plot parameters
 import matplotlib.pyplot as plt #Used for plotting
-import sys #Used for getting command line arguments
 import scipy.optimize as so
 
-
-sys.path.append('/home/edvinolofsson/bin/')
+#Import local code
 from constants import *
 from plot_utils import format_plot
 
