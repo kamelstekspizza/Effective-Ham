@@ -216,8 +216,8 @@ def compute_spectrum(system,matels,E_range,E_points,I_p,plot=False):
     if plot:
         fig_spec,ax_spec = plt.subplots()
         ax_spec.plot(E_vec-I_p,np.abs(spec)**2,label = 'Total')
-        ax_spec.plot(E_vec-I_p,np.abs(spec_b)**2,label = 'b contribution')
-        ax_spec.plot(E_vec-I_p,np.abs(spec_a)**2,label = 'a contribution')
+        ax_spec.plot(E_vec-I_p,np.abs(spec_b)**2,'--',label = 'b contribution')
+        ax_spec.plot(E_vec-I_p,np.abs(spec_a)**2,':',label = 'a contribution')
         ax_spec.legend()
         format_plot(fig_spec,ax_spec,'Energy[a.u.]','Photoelectron yield [arb. u.]')
 
